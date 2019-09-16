@@ -1,0 +1,78 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>User page</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+		<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+		<link rel="stylesheet" href="static/css/user/main.css" />
+	</head>
+	<body>
+
+		<nav class="navbar navbar-inverse">
+		  <div class="container-fluid">
+		    <div class="navbar-header">
+		      <a class="navbar-brand" href="#">DietY</a>
+		    </div>
+		    <ul class="nav navbar-nav">
+		      <li class="inactive"><a href="/home">Home</a></li>
+					<li class="inactive"><a href="/userHistory">Order history</a></li>
+<!-- 					<li class="inactive"><a id="indian">View Indian</a></li>
+					<li class="inactive"><a id="chinese">View Chinese</a></li>
+					<li class="inactive"><a id="dessert">View Desserts</a></li> -->
+		    </ul>
+		    <ul class="nav navbar-nav navbar-right">
+		      <li><a href="#"><span id="username" class="glyphicon glyphicon-user"></span></a></li>
+		      <li><a id="btnLogout" href="/"><span class="glyphicon glyphicon-log-in"></span> Logout</a></li>
+		    </ul>
+		  </div>
+		</nav>
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<h1 id="heading" style="text-align: center;margin-top:35px;"> Add your favourite items to cart ! </h1>
+					<div id="main">
+						<div class="inner">
+							<div>
+								<input style = "float:left; max-width: 50%" id = "search" type="text" name="search" placeholder="Search..">
+								<button id = "cart" style = "float:right;margin-left:10px;" type="button" name="button">View cart!</button>
+								<button id = "goBtn" style = "float:right;margin-left:10px" type="button" name="button">Go!</button>
+								<button id = "goBtn1" style = "float:right;margin-left:10px" type="button" name="button">All Items!</button>
+
+							</div>
+							<br>
+							<br>
+							<br>
+		
+							 <section id="tilesPage" class="tiles row">
+
+
+							</section>
+						</div>
+					</div>
+			</div>
+<style>
+#search {
+    width: 130px;
+    -webkit-transition: width 0.4s ease-in-out;
+    transition: width 0.4s ease-in-out;
+}
+
+/* When the input field gets focus, change its width to 100% */
+#search:focus {
+    width: 70%;
+}
+</style>
+		<!-- Scripts -->
+			<script src="static/js/user/jquery.min.js"></script>
+		  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+			<script src="static/js/user/skel.min.js"></script>
+			<script src="static/js/user/util.js"></script>
+			<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
+			<script src="static/js/user/main.js"></script>
+			<script src="static/js/user/user.js"></script>
+
+	</body>
+</html>
